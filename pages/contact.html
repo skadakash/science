@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Science Club of NIFTEM-T</title>
+  <link rel="stylesheet" href="start.css"> <!-- Ensuring it uses the same styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7; /* Matching the overall background */
+    }
+
+    .contact-section {
+      display: flex;
+      flex-direction: column; 
+      background: inherit;
+      color: #333;
+      padding: 50px 10%;
+      justify-content: center;
+      padding-top: 120px; /* Added padding to push content below header */
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #003f99; /* Consistent header color */
+    }
+
+    /* Ensuring the header stays on top */
+    header.header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure the header is on top */
+    }
+
+    .contact-content {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .map-container {
+      width: 50%;
+      max-height: 600px;
+      height: 100%;
+      margin-right: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info-container {
+      width: 45%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: #333;
+      height: 100%;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .contact-member {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-member img {
+      width: 150px; /* Increased image size */
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .contact-member h4 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .contact-member p {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .contact-member:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Popup Styling */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.9);
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      width: 60%;
+      max-width: 500px;
+      z-index: 1000;
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+
+    .popup.active {
+      display: block;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popup h4 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .popup p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .popup-close {
+      background-color: #ff5f5f;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .popup-close:hover {
+      background-color: darkred;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+
+
+    /* Make map and contact info align responsively */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        padding: 20px 10%;
+      }
+
+      .map-container {
+        width: 100%;
+        height: 300px;
+      }
+
+      .contact-info-container {
+        width: 100%;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="site-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="../start.html" class="logo-link">
+          <img class="logo" src="images/logo/club_logo.png" alt="Science Club Logo">
+          <span>Science Club</span>
+        </a>
+        <nav class="nav">
+          <a href="../start.html" class="nav-link">Home</a>
+          <a href="../start.html#about" class="nav-link">About</a>
+          <a href="meet.html" class="nav-link">Team</a>
+          <a href="event.html" class="nav-link">Event Registration</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="contact-section" id="contact">
+        <div class="contact-header">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-content">
+          <!-- Map Container -->
+          <div class="map-container">
+            <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18646.56720625035!2d79.09057467242913!3d10.737729758205582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabf368e08e683%3A0x78e419903f06d430!2sNIFTEM%20Thanjavur!5e0!3m2!1sen!2sin!4v1643871011153!5m2!1sen!2sin" width="100%" height="400" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+
+          <!-- Contact Information Container -->
+          <div class="contact-info-container">
+            <div class="contact-info">
+              <div class="contact-member" onclick="showPopup('President', 'Sheena Jane Reuben', '+91 86690 61526', 'sheenareuben2022bt@iifpt.edu.in', 'images/team/President.png')">
+                <img src="images/team/President.png" alt="Sheena Jane Reuben">
+                <div>
+                  <h4>Sheena Jane Reuben</h4>
+                  <p><strong>President</strong></p>
+                  <p>+91 86690 61526</p>
+                </div>
+              </div>
+
+              <div class="contact-member" onclick="showPopup('Vice President', 'Shankar S', '+91 94884 71097', 'shankars2022bt@iifpt.edu.in', 'images/team/VicePresident.png')">
+                <img src="images/team/VicePresident.png" alt="Shankar S">
+                <div>
+                  <h4>Shankar S</h4>
+                  <p><strong>Vice President</strong></p>
+                  <p>+91 94884 71097</p>
+                </div>
+              </div>
+
+              <div class="contact-member" onclick="showPopup('Secretary', 'M S Shamita Sherry', '+91 90423 10038', 'msshamita2022bt@iifpt.edu.in', 'images/team/Secretary.png')">
+                <img src="images/team/Secretary.png" alt="M S Shamita Sherry">
+                <div>
+                  <h4>M S Shamita Sherry</h4>
+                  <p><strong>Secretary</strong></p>
+                  <p>+91 90423 10038</p>
+                </div>
+              </div>
+
+              <div class="contact-member" onclick="showPopup('Treasurer', 'Keerthyrajan S', '+91 96009 24277', 'keerthyrajans2022bt@iifpt.edu.in', 'images/team/Treasurer.png')">
+                <img src="images/team/Treasurer.png" alt="Keerthyrajan S">
+                <div>
+                  <h4>Keerthyrajan S</h4>
+                  <p><strong>Treasurer</strong></p>
+                  <p>+91 96009 24277</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h4><img src="images/logo/club_logo.png" alt="logo">Science Club of NIFTEM-T</h4>
+                <p>Fostering a community of scientific exploration and innovation at NIFTEM-T</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:science@iifpt.edu.in">science@iifpt.edu.in</a></p>
+                <p>Phone: <a href="tel:+919750968414">+91 9750968414</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <!-- Replace # with your actual social media links -->
+                    <a href="https://www.linkedin.com/school/niftem-thanjavur" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/NIFTEM.Thanjavur/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/niftem_thanjavur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Science Club of NIFTEM-T. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+  </div>
+
+  <!-- Script for Popup -->
+  <script>
+    function showPopup(position, name, phone, email, image) {
+      document.getElementById("popup-name").textContent = name;
+      document.getElementById("popup-position").textContent = position;
+      document.getElementById("popup-phone").textContent = phone;
+      document.getElementById("popup-email").textContent = email;
+      document.getElementById("popup-image").src = image;
+      document.getElementById("popup").classList.add("active");
+    }
+
+    function closePopup() {
+      document.getElementById("popup").classList.remove("active");
+    }
+  </script>
+
+</body>
+</html>

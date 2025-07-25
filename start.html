@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Club of NIFTEM-T | Fostering Curiosity</title>
+  <link rel="icon" href="pages/images/logo/club_logo.png" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="pages/start.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+</head>
+
+<body>
+  <div class="site-wrapper">
+  <!-- Background Shapes -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="pages/images/logo/club_logo.png" alt="Science Club Logo" class="preloader-logo">
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo-link">
+        <img class="logo" src="pages/images/logo/club_logo.png" alt="Science Club Logo">
+        <span>Science Club</span>
+      </a>
+      <nav class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="pages/meet.html" class="nav-link">Team</a>
+	<a href="pages/event.html" class="nav-link">Event Registration</a>
+        <a href="#" class="nav-link" id="openFlipbook1">Gallery</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+      </nav>
+<div class="mobile-nav">
+  <nav>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="pages/meet.html" class="mobile-nav-link">Team</a>
+    <a href="pages/event.html" class="mobile-nav-link">Event Registration</a>
+    <a href="#" class="mobile-nav-link" id="openFlipbook1">Gallery</a>
+    <a href="pages/contact.html" class="mobile-nav-link">Contact</a>
+  </nav>
+</div>
+
+      <a href="https://niftem-t.ac.in/" target="_blank" class="niftem-logo-link">
+        <img class="logo" src="pages/images/logo/niftem_logo.png" alt="NIFTEM-T Logo">
+      </a>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <!-- Swiper -->
+            <div class="swiper-container hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(pages/images/bgdrop/bgdrop1.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(pages/images/bgdrop/bgdrop2.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(pages/images/bgdrop/bgdrop3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(pages/images/bgdrop/bgdrop4.jpg)"></div>
+                </div>
+            </div>
+<div id="flipbookModal1" class="flipbook-modal">
+  <a href="#" class="modal-close1">&times;</a>
+  <div class="modal-content1">
+    <div id="flipbook1"></div>
+    <div class="flipbook-nav1">
+      <button id="flipPrev1">Previous</button>
+      <button id="flipNext1">Next</button>
+    </div>
+  </div>
+</div>
+
+            <div class="hero-overlay"></div>
+            <div class="container hero-container">
+                <h1 class="hero-title">Where Curiosity Meets Discovery</h1>
+                <p class="hero-subtitle">The Science Club of NIFTEM-T is a student-led community dedicated to exploring
+                    the
+                    wonders of science through interactive events, workshops, and collaborative projects.</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </div>
+        </section>
+<section id="gallery" style="display:none;"></section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="about-content">
+                    <p>The <strong>Science Club of NIFTEM-T</strong> is a student-led platform that encourages students
+                        to explore
+                        science in a fun, practical, and meaningful way. Our main aim is to promote scientific thinking
+                        and
+                        curiosity among students by conducting interactive and educational events.</p>
+                    <div class="about-grid">
+                        <div class="about-card">
+  <h4>Interactive Events</h4>
+  <p>We organize quizzes, poster presentations, and model-making competitions to foster a
+      spirit of healthy competition and creativity.</p>
+  <button id="openSlider-events" class="cta-button" style="margin-top: 1rem">View More</button>
+</div>
+
+                        <div class="about-card">
+                            <h4>Hands-On Workshops</h4>
+                            <p>Our workshops provide practical, hands-on learning experiences, allowing students to
+                                apply theoretical
+                                knowledge.</p>
+                        </div>
+                        <div class="about-card">
+                            <h4>Expert Guest Lectures</h4>
+                            <p>We invite experts from scientific and research backgrounds to inspire and inform students
+                                about the
+                                latest advancements.</p>
+                        </div>
+                        <div class="about-card">
+                            <h4>Celebrating Science</h4>
+                            <p>We commemorate days of scientific importance like National Science Day and World Food Day
+                                with themed
+                                events and campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h4><img src="pages/images/logo/club_logo.png" alt="logo">Science Club of NIFTEM-T</h4>
+                <p>Fostering a community of scientific exploration and innovation at NIFTEM-T</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:science@iifpt.edu.in">science@iifpt.edu.in</a></p>
+                <p>Phone: <a href="tel:+919750968414">+91 9750968414</a></p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <!-- Replace # with your actual social media links -->
+                    <a href="https://www.linkedin.com/school/niftem-thanjavur" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/NIFTEM.Thanjavur/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/niftem_thanjavur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Science Club of NIFTEM-T. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<div id="sliderModal-events" class="modal-overlay modal-slider-popup">
+  <a href="#" class="modal-bg-close modal-close"></a>
+  <div class="modal-content" style="max-width: 800px">
+    <a href="#" class="modal-close">&times;</a>
+    <div class="swiper-container modal-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="pages/images/imgs/img1.JPG">
+          </div>
+        <div class="swiper-slide">
+          <img src="pages/images/imgs/img2.JPG">
+          </div>
+        <div class="swiper-slide">
+          <img src="pages/images/imgs/img3.JPG">
+          </div>
+<div class="swiper-slide">
+          <img src="pages/images/imgs/img4.JPG">
+          </div>
+<div class="swiper-slide">
+          <img src="pages/images/imgs/img5.JPG">
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Swiper.js JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom Script for Swiper -->
+    <script>
+        var swiper = new Swiper('.hero-swiper', {
+            loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Scroll Animations
+        const header = document.querySelector('.header');
+        const sections = document.querySelectorAll('.about-content, .team-grid');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Preloader
+        window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.classList.add('hide');
+    setTimeout(() => preloader.remove(), 1000); // Ensures it’s gone from layout
+  }
+});
+
+
+        // Mobile Nav Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            })
+        })
+    </script>
+
+
+<script>
+  const openEvents = document.getElementById('openSlider-events');
+  const modalPopup = document.getElementById('sliderModal-events');
+  const closeBtns = modalPopup.querySelectorAll('.modal-close, .modal-bg-close');
+
+  openEvents?.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalPopup.classList.add('active');
+  });
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalPopup.classList.remove('active');
+    });
+  });
+
+  </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const openEvents = document.getElementById('openSlider-events');
+    const modalPopup = document.getElementById('sliderModal-events');
+    const closeBtns = modalPopup.querySelectorAll('.modal-close, .modal-bg-close');
+
+    openEvents?.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalPopup.classList.add('active');
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalPopup.classList.remove('active');
+      });
+    });
+
+    // Ensure Swiper only initializes once modal is visible
+    let swiperInitialized = false;
+    openEvents.addEventListener('click', () => {
+      if (!swiperInitialized) {
+        new Swiper('#sliderModal-events .swiper-container', {
+          loop: true,
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true,
+          },
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '#sliderModal-events .swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '#sliderModal-events .swiper-button-next',
+            prevEl: '#sliderModal-events .swiper-button-prev',
+          }
+        });
+        swiperInitialized = true;
+      }
+    });
+  });
+</script>
+
+
+<style>
+.modal-swiper .swiper-slide img {
+  transition: opacity 0.6s ease-in-out;
+}
+</style>
+
+
+  <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <style>
+    .modal-slider-popup {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .modal-slider-popup.active {
+      display: flex;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+    .nav-buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .nav-buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0052d4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 0 10px;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0, 82, 212, 0.2);
+    }
+    .nav-buttons button:hover {
+      background-color: #003f99;
+    }
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+@media (max-width: 480px) {
+  .flipbook-modal .modal-content1 {
+    width: 95vw !important;
+    height: auto !important;
+  }
+
+  .flipbook-nav1 button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .split-page1 img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .first-cover h1 {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  </style>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const flipbookTrigger1 = document.getElementById("openFlipbook1");
+  const modal1 = document.getElementById("flipbookModal1");
+  const closeBtn1 = modal1.querySelector(".modal-close1");
+  const flipbook1 = $("#flipbook1");
+  const prevBtn1 = document.getElementById("flipPrev1");
+  const nextBtn1 = document.getElementById("flipNext1");
+
+  const imagePaths1 = [
+    "images/imgs/img1.JPG",
+    "images/imgs/img2.JPG",
+    "images/imgs/img3.JPG",
+    "images/imgs/img4.JPG",
+    "images/imgs/img5.JPG",
+    "images/imgs/img6.JPG"
+  ];
+
+  let flipbookInitialized1 = false;
+
+  function destroyFlipbook1() {
+    if (flipbook1.data("turn")) {
+      flipbook1.turn("destroy").empty();
+      flipbookInitialized1 = false;
+    }
+  }
+
+  function createCover1(html) {
+    return `<div class="hard1">${html}</div>`;
+  }
+
+  function getFlipbookSize1() {
+  const vw1 = window.innerWidth;
+  const vh1 = window.innerHeight;
+  let width1 = vw1 < 480 ? vw1 * 0.95 : Math.min(800, vw1 * 0.9);
+  let height1 = width1 * 0.65;
+
+  if (height1 > vh1 * 0.8) {
+    height1 = vh1 * 0.8;
+    width1 = height1 * 1.54;
+  }
+
+  return { width: width1, height: height1 };
+}
+
+
+  function initializeFlipbook1() {
+  if (flipbookInitialized1) return;
+
+  const size = getFlipbookSize1();
+  flipbook1.css({ width: size.width + "px", height: size.height + "px" });
+
+flipbook1.append(createCover1(`
+  <div class="first-cover" style="width: 400px; height: 520px; position: absolute; inset: 0px auto auto 0px; transform-origin: 0% 0%;">
+    <img src="pages/images/logo/club_logo.png" class="club-logo" alt="Club Logo">
+    <h1>Welcome to the Flipbook</h1>
+    <p class="subtitle">A Journey Through the Science Club</p>
+  </div>
+`));
+	
+
+
+imagePaths1.forEach((src) => {
+  flipbook1.append(`
+    <div class="split-page1 left1">
+      <div class="clip-container">
+        <img src="${src}" alt="">
+      </div>
+    </div>
+  `);
+  flipbook1.append(`
+    <div class="split-page1 right1">
+      <div class="clip-container">
+        <img src="${src}" alt="">
+      </div>
+    </div>
+  `);
+});
+
+
+  flipbook1.append(createCover1(`
+  <div class="cover-content">
+    <img src="pages/images/logo/niftem_logo.png" alt="Back">
+    <div>Thank You!</div>
+  </div>
+`));
+
+  flipbook1.turn({
+    width: size.width,
+    height: size.height,
+    autoCenter: true,
+    elevation: 50,
+    display: "double",
+    gradients: true,
+    acceleration: true
+  });
+let autoFlipInterval = setInterval(() => {
+  const totalPages = flipbook1.turn("pages");
+  const currentPage = flipbook1.turn("page");
+
+  if (currentPage < totalPages) {
+    flipbook1.turn("next");
+  } else {
+    clearInterval(autoFlipInterval);
+    setTimeout(() => {
+      modal1.classList.remove("active");
+      document.body.style.overflow = "";
+      destroyFlipbook1();
+    }, 2000); // short pause before closing
+  }
+}, 5000); // 5 seconds per page
+
+  flipbookInitialized1 = true;
+}
+
+
+  function resizeFlipbook1() {
+    if (flipbookInitialized1) {
+      const size1 = getFlipbookSize1();
+      flipbook1.turn("size", size1.width, size1.height);
+    }
+  }
+
+  flipbookTrigger1.addEventListener("click", e => {
+  e.preventDefault();
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    alert("Please view the gallery on a desktop or larger screen for full experience.");
+    return;
+  }
+  modal1.classList.add("active");
+  document.body.style.overflow = "hidden";
+  setTimeout(() => initializeFlipbook1(), 10);
+});
+
+  closeBtn1.addEventListener("click", e => {
+    e.preventDefault();
+    modal1.classList.remove("active");
+    document.body.style.overflow = "";
+    destroyFlipbook1();
+  });
+
+  prevBtn1.addEventListener("click", () => flipbook1.turn("previous"));
+  nextBtn1.addEventListener("click", () => flipbook1.turn("next"));
+  window.addEventListener("resize", resizeFlipbook1);
+});
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.querySelector(".nav-toggle");
+    const header = document.querySelector(".header");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navToggle?.addEventListener("click", () => {
+      document.body.classList.toggle("nav-open");
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        document.body.classList.remove("nav-open");
+      });
+    });
+  });
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.body.classList.remove('nav-open');
+  });
+});
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.querySelector(".nav-toggle");
+    const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+    navToggle?.addEventListener("click", () => {
+      document.body.classList.toggle("nav-open");
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        document.body.classList.remove("nav-open");
+      });
+    });
+  });
+</script>
+
+</div>
+</body>
+
+</html>

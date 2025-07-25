@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet The Team | Science Club of NIFTEM-T</title>
+  <link rel="stylesheet" href="start.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <style>
+    .nav-toggle {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .hamburger {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      display: block;
+      margin: 5px auto;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem;
+    }
+
+    body.nav-open .mobile-nav {
+      display: flex;
+    }
+
+    @media screen and (min-width: 769px) {
+      .mobile-nav {
+        display: none !important;
+      }
+      .nav-toggle {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-shape blob1"></div>
+  <div class="animated-shape blob2"></div>
+  <div class="animated-shape blob3"></div>
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+
+ <div class="site-wrapper">
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="images/logo/club_logo.png" alt="Science Club Logo" class="preloader-logo">
+  </div>
+<header class="header">
+  <div class="container nav-container">
+    <a href="../start.html" class="logo-link">
+      <img class="logo" src="images/logo/club_logo.png" alt="Science Club Logo">
+      <span>Science Club</span>
+    </a>
+
+    <nav class="nav">
+      <a href="../start.html" class="nav-link">Home</a>
+      <a href="../start.html#about" class="nav-link">About</a>
+     <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="https://niftem-t.ac.in/" target="_blank" class="niftem-logo-link">
+      <img class="logo" src="images/logo/niftem_logo.png" alt="NIFTEM-T Logo">
+    </a>
+
+    <!-- ✅ Hamburger Toggle Button -->
+    <button class="nav-toggle" id="menu-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+
+  <!-- ✅ Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav">
+    <nav>
+      <a href="../start.html" class="mobile-nav-link">Home</a>
+      <a href="../start.html#about" class="mobile-nav-link">About</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  main {
+    margin-top: 1rem;
+  }
+</style>
+
+  <main>
+    <section id="team">
+      <div class="container">
+        <h2 class="section-title">Meet The Team</h2>
+                <!-- Faculty Advisors -->
+                <h3 class="team-subtitle">Faculty Core Members</h3>
+                <div class="team-grid team-grid-1up">
+                    <a href="#" class="profile-card" data-modal="modal-director">
+                        <img src="images/team/director.png" alt="Prof. V. Palanimuthu">
+                        <h4>Prof. V. Palanimuthu</h4>
+                        <p>Director, NIFTEM-T</p>
+                    </a>
+		</div>
+                <div class="team-grid team-grid-1up">
+                    <a href="#" class="profile-card" data-modal="modal-dean">
+                        <img src="images/team/dean.png" alt="Dr. Jagan Mohan">
+                        <h4>Dr. Jagan Mohan</h4>
+                        <p>Dean (Students Welfare)</p>
+                    </a>
+		</div>
+                <div class="team-grid team-grid-1up">
+                    <a href="#" class="profile-card" data-modal="modal-hema">
+                        <img src="images/team/coord.png" alt="Dr. Vincent Hema">
+                        <h4>Dr. Vincent Hema</h4>
+                        <p>Associate Professor</p>
+                    </a>
+                </div>
+
+                <!-- Office Bearers -->
+                <h3 class="team-subtitle">Office Bearers</h3>
+                <div class="team-grid team-grid-2up">
+                    <a href="#" class="profile-card" data-modal="modal-president">
+                        <img src="images/team/President.png" alt="Sheena Jane Reuben">
+                        <h4>Sheena Jane Reuben</h4>
+                        <p>President</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-vp">
+                        <img src="images/team/VicePresident.png" alt="Shankar S">
+                        <h4>Shankar S</h4>
+                        <p>Vice President</p>
+                    </a>
+                </div>
+                <div class="team-grid team-grid-3up">
+                    <a href="#" class="profile-card" data-modal="modal-secretary">
+                        <img src="images/team/Secretary.png" alt="M S Shamita Sherry">
+                        <h4>M S Shamita Sherry</h4>
+                        <p>Secretary</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-jointsec1">
+                        <img src="images/team/JointSecretary1.png" alt="Diya A U">
+                        <h4>Diya A U</h4>
+                        <p>Joint Secretary</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-jointsec2">
+                        <img src="images/team/JointSecretary2.png" alt="Nasreen Fathima A">
+                        <h4>Nasreen Fathima A</h4>
+                        <p>Joint Secretary</p>
+                    </a>
+                </div>
+                <div class="team-grid team-grid-2up">
+                    <a href="#" class="profile-card" data-modal="modal-treasurer">
+                        <img src="images/team/Treasurer.png" alt="Keerthyrajan S">
+                        <h4>Keerthyrajan S</h4>
+                        <p>Treasurer</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-jointtreasurer">
+                        <img src="images/team/JointTreasurer.png" alt="Muhammed Ihsan Ali P S">
+                        <h4>Muhammed Ihsan Ali P S</h4>
+                        <p>Joint Treasurer</p>
+                    </a>
+                </div>
+
+                <!-- Executive Members -->
+                <h3 class="team-subtitle">Executive Committee</h3>
+                <div class="team-grid large-grid executive-grid">
+                    <a href="#" class="profile-card" data-modal="modal-exec1">
+			<img src="images/team/Executive1.png"
+                            alt="Ralph Danny Elango D">
+                        <h4>Ralph Danny Elango D</h4>
+                        <p>Executive Member</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-exec2">
+			<img src="images/team/Executive2.png" alt="Monish Raj A">
+                        <h4>Monish Raj A</h4>
+                        <p>Executive Member</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-exec3">
+			<img src="images/team/Executive3.png" alt="Vijaykumar">
+                        <h4>Vijaykumar</h4>
+                        <p>Executive Member</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-exec4">
+			<img src="images/team/Executive4.png"
+                            alt="Abhily Sai Abburi">
+                        <h4>Abhily Sai Abburi</h4>
+                        <p>Executive Member</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-exec5">
+			<img src="images/team/Executive5.png" alt="K V Tannvi Nair">
+                        <h4>K V Tannvi Nair</h4>
+                        <p>Executive Member</p>
+                    </a>
+                    <a href="#" class="profile-card" data-modal="modal-exec6">
+			<img src="images/team/Executive6.png" alt="K V Nidhi Shree">
+                        <h4>K V Nidhi Shree</h4>
+                        <p>Executive Member</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+  </main>
+<footer id="contact" class="footer">
+  <div class="container footer-container">
+    <div class="footer-about">
+      <h4><img src="images/logo/club_logo.png" alt="logo">Science Club</h4>
+      <p>Fostering a community of scientific exploration and innovation at NIFTEM-T.</p>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: <a href="mailto:science@iifpt.edu.in">science@iifpt.edu.in</a></p>
+      <p>Phone: <a href="tel:+919750968414">+91 9750968414</a></p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/school/niftem-thanjavur" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+	<a href="https://www.facebook.com/NIFTEM.Thanjavur/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/niftem_thanjavur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Science Club of NIFTEM-T. All Rights Reserved.</p>
+  </div>
+</footer>
+  </div>
+
+    <!-- Modals -->
+    <div id="modal-director" class="modal-overlay">
+        <a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content">
+            <a href="#!" class="modal-close">&times;</a>
+            <img src="images/team/director.png" alt="Prof. V. Palanimuthu" class="modal-img">
+            <h3 class="modal-title">Prof. V. Palanimuthu</h3>
+            <p class="modal-subtitle">Director, NIFTEM-T</p>
+            <p class="modal-email">director@niftem-t.ac.in</p>
+            <p class="modal-body">Prof. Palanimuthu leads the institute with rich experience in food technology and
+                academic
+                governance. Under his leadership, NIFTEM-T has expanded its innovation and outreach programs.</p>
+
+        </div>
+    </div>
+
+    <div id="modal-dean" class="modal-overlay">
+        <a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content">
+            <a href="#!" class="modal-close">&times;</a>
+            <img src="images/team/dean.png" alt="Dr. Jagan Mohan" class="modal-img">
+            <h3 class="modal-title">Dr. Jagan Mohan</h3>
+            <p class="modal-subtitle">Dean (Students Welfare), NIFTEM-T</p>
+            <p class="modal-email">jagan@iifpt.edu.in</p>
+            <p class="modal-body">Dr. Jagan Mohan oversees student welfare and engagement at NIFTEM-T. He plays a
+                pivotal role
+                in ensuring a supportive academic and personal development environment for students.</p>
+        </div>
+    </div>
+
+    <div id="modal-hema" class="modal-overlay">
+        <a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content">
+            <a href="#!" class="modal-close">&times;</a>
+            <img src="images/team/coord.png" alt="Dr. Vincent Hema" class="modal-img">
+            <h3 class="modal-title">Dr. Vincent Hema</h3>
+            <p class="modal-subtitle">Associate Professor</p>
+            <p class="modal-email">mariagorretti@iifpt.edu.in</p>
+            <p class="modal-body">Dr. Vincent Hema contributes to NIFTEM-T through her work in food plant operations and
+                entrepreneurship development. She actively supports startups and incubation initiatives.</p>
+        </div>
+    </div>
+
+    <div id="modal-president" class="modal-overlay">
+        <a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content">
+            <a href="#!" class="modal-close">&times;</a>
+            <img src="images/team/President.png" alt="Sheena Jane Reuben" class="modal-img">
+            <h3 class="modal-title">Sheena Jane Reuben</h3>
+            <p class="modal-subtitle">President</p>
+            <p class="modal-email">sheenareuben2022bt@iifpt.edu.in</p>
+            <p class="modal-body">A dedicated leader who values teamwork and personal growth. Her extensive
+                extracurricular
+                experience has honed her passion for collaboration.</p>
+        </div>
+    </div>
+
+    <div id="modal-vp" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/VicePresident.png"
+                alt="Shankar S" class="modal-img">
+            <h3 class="modal-title">Shankar S</h3>
+            <p class="modal-subtitle">Vice President</p>
+            <p class="modal-email">shankars2022bt@iifpt.edu.in</p>
+            <p class="modal-body">Supports the club by assisting in event planning and student engagement.</p>
+        </div>
+    </div>
+    <div id="modal-secretary" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Secretary.png"
+                alt="M S Shamita Sherry" class="modal-img">
+            <h3 class="modal-title">M S Shamita Sherry</h3>
+            <p class="modal-subtitle">Secretary</p>
+            <p class="modal-email">msshamita2022bt@iifpt.edu.in</p>
+            <p class="modal-body">A passionate food technologist, driven by innovation and emerging food technologies.
+            </p>
+        </div>
+    </div>
+    <div id="modal-jointsec1" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/JointSecretary1.png"
+                alt="Diya A U" class="modal-img">
+            <h3 class="modal-title">Diya A U</h3>
+            <p class="modal-subtitle">Joint Secretary</p>
+            <p class="modal-email">diyaau@iifpt.edu.in</p>
+            <p class="modal-body">A team-spirited individual who thrives in collaborative environments, adding
+                creativity and
+                energy to every initiative.</p>
+        </div>
+    </div>
+    <div id="modal-jointsec2" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/JointSecretary2.png"
+                alt="Nasreen Fathima A" class="modal-img">
+            <h3 class="modal-title">Nasreen Fathima A</h3>
+            <p class="modal-subtitle">Joint Secretary</p>
+            <p class="modal-email">nasreenfathimaa@iifpt.edu.in</p>
+            <p class="modal-body">A driven and detail-oriented individual with a strong work ethic and analytical
+                mindset.</p>
+        </div>
+    </div>
+    <div id="modal-treasurer" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Treasurer.png"
+                alt="Keerthyrajan S" class="modal-img">
+            <h3 class="modal-title">Keerthyrajan S</h3>
+            <p class="modal-subtitle">Treasurer</p>
+            <p class="modal-email">keerthyrajans2022bt@iifpt.edu.in</p>
+            <p class="modal-body">Combines analytical thinking with creativity, managing resources efficiently while
+                contributing innovative ideas.</p>
+        </div>
+    </div>
+    <div id="modal-jointtreasurer" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/JointTreasurer.png"
+                alt="Muhammed Ihsan Ali P S" class="modal-img">
+            <h3 class="modal-title">Muhammed Ihsan Ali P S</h3>
+            <p class="modal-subtitle">Joint Treasurer</p>
+            <p class="modal-email">muhammedihsanalips@iifpt.edu.in</p>
+            <p class="modal-body">Passionate about the science of food and its technological potential, with a curious
+                and
+                creative mindset.</p>
+        </div>
+    </div>
+
+    <div id="modal-exec1" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Executive1.png"
+                alt="Ralph Danny Elango D" class="modal-img">
+            <h3 class="modal-title">Ralph Danny Elango D</h3>
+            <p class="modal-subtitle">Executive Committee Member</p>
+            <p class="modal-email">ralphdannyelangod@iifpt.edu.in</p>
+            <p class="modal-body">A forward-thinker who sees science as a tool for change, blending innovation with
+                real-world
+                impact.</p>
+        </div>
+    </div>
+    <div id="modal-exec2" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Executive2.png"
+                alt="Monish Raj A" class="modal-img">
+            <h3 class="modal-title">Monish Raj A</h3>
+            <p class="modal-subtitle">Executive Committee Member</p>
+            <p class="modal-email">monishraja@iifpt.edu.in</p>
+            <p class="modal-body">A curious innovator who enjoys solving real-world problems. His passion for learning
+                makes
+                him a valuable contributor.</p>
+        </div>
+    </div>
+    <div id="modal-exec3" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Executive3.png"
+                alt="Vijaykumar" class="modal-img">
+            <h3 class="modal-title">Vijaykumar</h3>
+            <p class="modal-subtitle">Executive Committee Member</p>
+            <p class="modal-email">vijaykumars@iifpt.edu.in</p>
+            <p class="modal-body">Passionate about food science, focusing on improving food safety, quality, and
+                sustainability.</p>
+        </div>
+    </div>
+    <div id="modal-exec4" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Executive4.png"
+                alt="Abhily Sai Abburi" class="modal-img">
+            <h3 class="modal-title">Abhily Sai Abburi</h3>
+            <p class="modal-subtitle">Executive Committee Member</p>
+            <p class="modal-email">abhilysaiabburi@iifpt.edu.in</p>
+            <p class="modal-body">Curious, creative, and hardworking. Enjoys exploring science, arts, and sports to
+                learn new
+                things.</p>
+        </div>
+    </div>
+    <div id="modal-exec5" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Executive5.png"
+                alt="K V Tannvi Nair" class="modal-img">
+            <h3 class="modal-title">K V Tannvi Nair</h3>
+            <p class="modal-subtitle">Executive Committee Member</p>
+            <p class="modal-email">kvtannvinair@iifpt.edu.in</p>
+            <p class="modal-body">A curious and enthusiastic individual with a deep passion for science. Thrives on
+                exploring
+                new ideas and collaborating.</p>
+        </div>
+    </div>
+    <div id="modal-exec6" class="modal-overlay"><a href="#!" class="modal-bg-close"></a>
+        <div class="modal-content"><a href="#!" class="modal-close">&times;</a><img src="images/team/Executive6.png"
+                alt="K V Nidhi Shree" class="modal-img">
+            <h3 class="modal-title">K V Nidhi Shree</h3>
+            <p class="modal-subtitle">Executive Committee Member</p>
+            <p class="modal-email">kvnidhishree@iifpt.edu.in</p>
+            <p class="modal-body">A creative and curious individual with a positive outlook and strong dedication. Her
+                adventurous spirit brings fresh ideas.</p>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.about-content, .team-grid');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  });
+</script>
+<script>
+  // Header scroll effect
+  const header = document.querySelector('.header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+<script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      preloader.classList.add('hide');
+    }
+  });
+</script>
+
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 25px;
+    background: var(--background-light);
+    border-radius: 0 0 2rem 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    position: relative;
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-fast);
+  }
+
+  .header.scrolled {
+    transform: translateY(-1rem);
+  box-shadow: var(--shadow-md);
+    opacity: 0.95;
+  }
+</style>
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+</style>
+
+<style>
+  .animated-shape,
+  .blob1,
+  .blob2,
+  .blob3,
+  .shape,
+  .shape-1,
+  .shape-2,
+  .shape-3 {
+    z-index: -10 !important;
+    position: fixed !important;
+  }
+</style>
+<style>
+  html, body {
+    height: 100%; /* Change from auto to 100% */
+    overflow-x: hidden;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex-grow: 1;
+  }
+</style>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  navToggle?.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  });
+</script>
+<style>
+  .animated-shape,
+  .blob1,
+  .blob2,
+  .blob3,
+  .shape,
+  .shape-1,
+  .shape-2,
+  .shape-3 {
+    z-index: -10 !important;
+    position: fixed !important;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const profileCards = document.querySelectorAll('.profile-card');
+    const modals = document.querySelectorAll('.modal-overlay');
+    const closeButtons = document.querySelectorAll('.modal-close, .modal-bg-close');
+
+    profileCards.forEach(card => {
+      card.addEventListener('click', function (e) {
+        e.preventDefault();
+        const modalId = card.getAttribute('data-modal');
+        document.getElementById(modalId).classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        modals.forEach(modal => modal.classList.remove('active'));
+        document.body.style.overflow = '';
+      });
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".profile-card");
+    const modals = document.querySelectorAll(".modal-overlay");
+    const closeBtns = document.querySelectorAll(".modal-close, .modal-bg-close");
+
+    cards.forEach(card => {
+      card.addEventListener("click", e => {
+        e.preventDefault();
+        const target = card.getAttribute("data-modal");
+        if (target) {
+          const modal = document.getElementById(target);
+          if (modal) {
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+          }
+        }
+      });
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        modals.forEach(modal => modal.classList.remove("active"));
+        document.body.style.overflow = "";
+      });
+    });
+  });
+</script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1;
+    margin-top: 1rem;
+  }
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.modal-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-bg-close {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+}
+
+
+</style>
+<style>
+  .header {
+    position: sticky;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8); /* translucent white */
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-fast);
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.7), 0 0 20px rgba(0, 200, 255, 0.5);
+    color: #00ccff;
+    animation: glow-text 1.5s ease-in-out infinite alternate;
+
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem; /* slightly increased */
+    color: var(--text-color, #000);
+  }
+
+  .niftem-logo-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+@keyframes glow-text {
+  from {
+    text-shadow: 0 0 5px rgba(0, 200, 255, 0.3), 0 0 10px rgba(0, 200, 255, 0.3);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(0, 200, 255, 0.9), 0 0 40px rgba(0, 200, 255, 0.7);
+  }
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.querySelector(".nav-toggle");
+    const header = document.querySelector(".header");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navToggle?.addEventListener("click", () => {
+      document.body.classList.toggle("nav-open");
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        document.body.classList.remove("nav-open");
+      });
+    });
+  });
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.body.classList.remove('nav-open');
+  });
+});
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.querySelector(".nav-toggle");
+    const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+    navToggle?.addEventListener("click", () => {
+      document.body.classList.toggle("nav-open");
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        document.body.classList.remove("nav-open");
+      });
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.querySelector(".nav-toggle");
+    const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+    navToggle?.addEventListener("click", () => {
+      document.body.classList.toggle("nav-open");
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        document.body.classList.remove("nav-open");
+      });
+    });
+  });
+</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.getElementById("menu-toggle");
+      const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+      navToggle?.addEventListener("click", () => {
+        document.body.classList.toggle("nav-open");
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          document.body.classList.remove("nav-open");
+        });
+      });
+    });
+  </script>
+
+
+</html>
